@@ -21,4 +21,5 @@ mysqli_close($yhteys);
 <a href='../html/vieraslomake.html'>Vieraslomake</a>
 <?php
 include "../html/footer.html";
+
 ?>
