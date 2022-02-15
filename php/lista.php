@@ -13,7 +13,7 @@ include "../html/header.html";
 $tulos=mysqli_query($yhteys, "select * from vieraat");
 while ($rivi=mysqli_fetch_object($tulos)){
     print "<p>$rivi->vieras $rivi->teksti <a href='./poistavieraat.php?poistettava=$rivi->id'>Poista</a></p>";
-    "<a href='./muokkaa.php?muokattava=$rivi->id'>muokkaa</a>";
+    "<a href='./muokkaavieraat.php?muokattava=$rivi->id'>Muokkaa</a>";
 }
 mysqli_close($yhteys);
 ?>
