@@ -22,4 +22,5 @@ mysqli_close($yhteys);
 <?php
 include "../html/footer.html";
 
+
 ?>
