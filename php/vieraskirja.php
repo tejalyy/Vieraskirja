@@ -27,4 +27,5 @@ mysqli_stmt_bind_param($stmt, 'sd', $vieras, $teksti);
 mysqli_stmt_execute($stmt);
 //Suljetaan tietokantayhteys
 mysqli_close($yhteys);
-header("Location:./lista.php");?>
+header("Location:./lista.php");
+?>
