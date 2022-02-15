@@ -17,7 +17,6 @@ while ($rivi=mysqli_fetch_object($tulos)){
 mysqli_close($yhteys);
 ?>
 
-moi
 <br>
 <a href='../html/vieraslomake.html'>Vieraslomake</a>
 <?php
