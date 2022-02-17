@@ -19,7 +19,8 @@ catch(Exception $e) {
 }
 $sql="update vieraat set nimi=?, p‰iv‰m‰‰r‰=?, viesti=?";
 $stmt=mysqli_prepare($yhteys, $sql);
-mysqli_stmt_bind_param($stmt, 'ssi', $nimi, $p‰iv‰m‰‰r‰, $viesti);
+mysqli_stmt_bind_param($stmt, 'sis', $nimi, $p‰iv‰m‰‰r‰, $viesti);
+
 mysqli_stmt_execute($stmt);
 
 mysql_close($yhteys);
