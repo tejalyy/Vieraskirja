@@ -23,7 +23,7 @@ $sql="insert into vieraat (vieras, teksti, pivmr) values(?, ?, ?)";
 //Valmistellaan sql-lause
 $stmt=mysqli_prepare($yhteys, $sql);
 //Sijoitetaan muuttujat oikeisiin paikkoihin
-mysqli_stmt_bind_param($stmt, 'ss', $vieras, $teksti);
+mysqli_stmt_bind_param($stmt, 'ss', $vieras, $teksti, $pivmr);
 //Suoritetaan sql-lause
 mysqli_stmt_execute($stmt);
 //Suljetaan tietokantayhteys
