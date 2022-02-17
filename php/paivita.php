@@ -14,7 +14,7 @@ try {
     
 }
 catch(Exception $e) {
-    header("Location:../html/yhteysvirhe.html")
+    header("Location:../html/yhteysvirhe.html");
     exit;
 }
 $sql="update vieraat set nimi=?, p‰iv‰m‰‰r‰=?, viesti=?";
