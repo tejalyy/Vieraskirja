@@ -26,7 +26,7 @@ include "../html/header.html";
 <p>Muokkaa tietoja</p>
 <form action='vieraskirja.php' method='post'>
 <input type='hidden' name='id' value='<?php print $rivi->id;?>'><br>
-P‰iv‰m‰‰r‰: <input type='date' name='date' value='<?php print $rivi->p‰iv‰m‰‰r‰;?>'><br>
+Pivmr: <input type='date' name='date' value='<?php print $rivi->pivmr;?>'><br>
 Nimi: <input type='text' name='vieras' value='<?php print $rivi->nimi;?>'><br>
 Viesti: <textarea type='text' name='teksti' value='<?php print $rivi->viesti;?>'></textarea><br>
 <input type='submit' name ='ok' value='L‰het‰'><br>

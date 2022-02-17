@@ -3,7 +3,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 $vieras=isset($_POST["vieras"]) ? $_POST["vieras"] : "";
 $teksti=isset($_POST["teksti"]) ? $_POST["teksti"] : "";
-$p‰iv‰m‰‰r‰=isset($_POST["p‰iv‰m‰‰r‰"]) ? $_POST["p‰iv‰m‰‰r‰"] : "";
+$pivmr=isset($_POST["pivmr"]) ? $_POST["pivmr"] : "";
 
 if (empty($vieras) || empty ($teksti)){
     header("Location:../html/vieraslomake.html");
