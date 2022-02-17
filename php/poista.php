@@ -14,4 +14,6 @@ mysqli_query($yhteys,"delete from vieraat where id=$poistettava");
 
 mysqli_close($yhteys);
 
+header("Location:./lista.php");
+
 ?>
