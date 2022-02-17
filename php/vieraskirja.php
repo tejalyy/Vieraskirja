@@ -18,7 +18,7 @@ catch(Exception $e){
     exit;
 }
 
-$sql="insert into vieraat (vieras, teksti) values(?, ?, ?)";
+$sql="insert into vieraat (vieras, teksti, pivmr) values(?, ?, ?)";
 
 //Valmistellaan sql-lause
 $stmt=mysqli_prepare($yhteys, $sql);
