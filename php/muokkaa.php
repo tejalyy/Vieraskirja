@@ -5,7 +5,7 @@ header("Location;../lista.php");
 exit;
 }
 try {
-    $yhteys=mysql_connect("db", "root", "password", "vieraskirja");
+    $yhteys=mysqli_connect("db", "root", "password", "vieraskirja");
 }
 catch(Exception $e) {
     header("location:.../html/yhteysvirhe.html");
