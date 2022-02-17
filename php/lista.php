@@ -19,7 +19,7 @@ mysqli_close($yhteys);
 ?>
 
 <br>
-<a href='../html/vieraslomake.html'>Vieraslomake</a>
+<a href='../html/vieraslomake.html'>Kirjoita uusi viesti</a>
 <?php
 include "../html/footer.html";
 

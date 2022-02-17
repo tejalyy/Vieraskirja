@@ -24,7 +24,7 @@ if (!$rivi=mysqli_fetch_object($tulos)) {
 include "../html/header.html";
 ?>
 <p>Muokkaa tietoja</p>
-<form action='../php/vieraskirja.php' method='post'>
+<form action='vieraskirja.php' method='post'>
 <input type='hidden' name='id' value='<?php print $rivi->id;?>'><br>
 P‰iv‰m‰‰r‰: <input type='date' name='date' value='<?php print $rivi->p‰iv‰m‰‰r‰;?>'><br>
 Nimi: <input type='text' name='vieras' value='<?php print $rivi->nimi;?>'><br>

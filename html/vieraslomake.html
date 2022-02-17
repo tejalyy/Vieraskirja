@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel='stylesheet' type='text/css' href='../css/tyyli.css'>
 <title>Insert title here</title>
 </head>
 <body>
@@ -13,10 +14,11 @@ Viesti: <textarea type='text' name='teksti' value=''></textarea><br>
 <input type='submit' name='ok' value='Lähetä'><br>
 </form>
 <form action="uploadfile2.php" method="post" enctype="multipart/form-data">
-    Select image to upload:
+    Valitse ladattava kuva:
     <input type="text" name="nimi" value=''>
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Lataa kuva" name="submit">
+    include "../html/footer.html";
 </form>
 </body>
 </html>
