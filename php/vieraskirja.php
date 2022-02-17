@@ -18,12 +18,12 @@ catch(Exception $e){
     exit;
 }
 
-$sql="insert into vieraat (vieras, teksti, p‰iv‰m‰‰r‰) values(?, ?, ?)";
+$sql="insert into vieraat (vieras, teksti) values(?, ?, ?)";
 
 //Valmistellaan sql-lause
 $stmt=mysqli_prepare($yhteys, $sql);
 //Sijoitetaan muuttujat oikeisiin paikkoihin
-mysqli_stmt_bind_param($stmt, 'ssi', $vieras, $teksti, $p‰iv‰m‰‰r‰);
+mysqli_stmt_bind_param($stmt, 'ss', $vieras, $teksti);
 //Suoritetaan sql-lause
 mysqli_stmt_execute($stmt);
 //Suljetaan tietokantayhteys
