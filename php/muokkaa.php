@@ -13,8 +13,8 @@ catch(Exception $e) {
 }
 $sql="select * from vieraat where id=?";
 $stmt=mysqli_prepare($yhteys, $sql);
-mysql_stmt_bind_param($stmt, 'i', $muokattava);
-mysql_stmt_execute($stmt);
+mysqli_stmt_bind_param($stmt, 'i', $muokattava);
+mysqli_stmt_execute($stmt);
 $tulos=mysqli_stmt_get_result($stmt);
 
 if (!$rivi=mysqli_fetch_object($tulos)) {
@@ -32,7 +32,8 @@ Viesti: <textarea type='text' name='teksti' value='<?php print $rivi->viesti;?>'
 <input type='submit' name ='ok' value='Lähetä'><br>
 </from>
 
-<?php 
 mysqli-close($yhteys);
+<?php 
+
 include "../html/footer.html";
 ?>
