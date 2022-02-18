@@ -3,8 +3,9 @@ body {
 	background-color: #c4aa8a;
 	}
 footer{
-	background-color: rgb(135,62,35);
 	text-align: center;
+	margin: auto;
+	width:500px;
 	}
 img {
 	float: center;
