@@ -7,7 +7,7 @@ catch(Exception $e){
     header("Location:../html/yhteysvirhe.html");
     exit;
 }
-echo "<td style='text-align: center;'>$row</td>";
+echo "<td style='text-align: center;'</td>";
 
 include "../html/header.html";
 
