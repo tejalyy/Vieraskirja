@@ -4,8 +4,8 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $vieras=isset($_POST["vieras"]) ? $_POST["vieras"] : "";
 $teksti=isset($_POST["teksti"]) ? $_POST["teksti"] : "";
 $date=isset($_POST["date"]) ? $_POST["date"] : "";
-print $date;
-/*
+/*print $date;*/
+
 if (empty($vieras) || empty ($teksti) || empty ($date)){
     header("Location:../html/vieraslomake.html");
     exit;
@@ -24,11 +24,11 @@ $sql="insert into vieraat (vieras, teksti, date) values(?, ?, ?)";
 //Valmistellaan sql-lause
 $stmt=mysqli_prepare($yhteys, $sql);
 //Sijoitetaan muuttujat oikeisiin paikkoihin
-mysqli_stmt_bind_param($stmt, 'ssi', $vieras, $teksti, $date);
+mysqli_stmt_bind_param($stmt, 'sss', $vieras, $teksti, $date);
 //Suoritetaan sql-lause
 mysqli_stmt_execute($stmt);
 //Suljetaan tietokantayhteys
 mysqli_close($yhteys);
 header("Location:./lista.php");
-*/
+
 ?>
