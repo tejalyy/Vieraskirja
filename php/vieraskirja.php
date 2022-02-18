@@ -4,7 +4,8 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $vieras=isset($_POST["vieras"]) ? $_POST["vieras"] : "";
 $teksti=isset($_POST["teksti"]) ? $_POST["teksti"] : "";
 $date=isset($_POST["date"]) ? $_POST["date"] : "";
-
+print $date;
+/*
 if (empty($vieras) || empty ($teksti) || empty ($date)){
     header("Location:../html/vieraslomake.html");
     exit;
@@ -29,4 +30,5 @@ mysqli_stmt_execute($stmt);
 //Suljetaan tietokantayhteys
 mysqli_close($yhteys);
 header("Location:./lista.php");
+*/
 ?>
