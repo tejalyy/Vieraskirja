@@ -20,7 +20,7 @@ echo "</div>";
 ?>
 
 <br>
-<a href='../html/vieraslomake.html' float="center" >Kirjoita uusi viesti</a>
+<a href='../html/vieraslomake.html'><center>Kirjoita uusi viesti</center></a>
 
 <?php
 include "../html/footer.html";
