@@ -8,7 +8,7 @@ catch(Exception $e){
     exit;
 }
 ?>
-<table class='lista'>
+<table class="lista">
 <?php
 include "../html/header.html";
 echo "<div style=\"text-align:center\">";
