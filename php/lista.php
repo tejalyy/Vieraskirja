@@ -11,7 +11,6 @@ include "../html/header.html";
 echo "<div style=\"text-align:center\">";
 echo "<div style=\"background-color:#eeeee4\">";
 echo "<div style=\"margin-top:-4.5%\">";
-echo "<div style=\"padding: 10px\">";
 echo "<div style=\"margin: auto\">";
 $tulos=mysqli_query($yhteys, "select * from vieraat");
 while ($rivi=mysqli_fetch_object($tulos)){
@@ -22,7 +21,7 @@ echo "</div>";
 echo "</div>";
 echo "</div>";
 echo "</div>";
-echo "</div>";
+
 ?>
 
 <br>
