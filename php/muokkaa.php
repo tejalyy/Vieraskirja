@@ -36,7 +36,7 @@ Viesti: <textarea type='text' name='teksti' value='<?php print $rivi->viesti;?>'
 </div>
 
 <?php 
-mysqli-close($yhteys);
+mysqli_close($yhteys);
 
 include "../html/footer.html";
 ?>
