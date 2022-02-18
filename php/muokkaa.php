@@ -32,8 +32,9 @@ Viesti: <textarea type='text' name='teksti' value='<?php print $rivi->viesti;?>'
 <input type='submit' name ='ok' value='Lähetä'><br>
 </from>
 
-mysqli-close($yhteys);
+
 <?php 
+mysqli-close($yhteys);
 
 include "../html/footer.html";
 ?>
