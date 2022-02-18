@@ -7,7 +7,6 @@ catch(Exception $e){
     header("Location:../html/yhteysvirhe.html");
     exit;
 }
-
 include "../html/header.html";
 echo "<div style=\"text-align:center\">";
 $tulos=mysqli_query($yhteys, "select * from vieraat");
@@ -23,6 +22,7 @@ echo "</div>";
 <a href='../html/vieraslomake.html'><center>Kirjoita uusi viesti</center></a>
 
 <?php
+
 include "../html/footer.html";
 
 ?>
