@@ -11,7 +11,7 @@ if (empty($vieras) || empty ($teksti)){
 }
 
 try{
-    $yhteys=mysqli_connect("db", "root", "password", "vieraskirja");
+    $yhteys=mysqli_connect("db", "root", "password", "kukkuu");
 }
 catch(Exception $e){
     header("Location:../html/yhteysvirhe.html");
