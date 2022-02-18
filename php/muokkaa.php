@@ -24,7 +24,7 @@ if (!$rivi=mysqli_fetch_object($tulos)) {
 include "../html/header.html";
 ?>
 
-<p>Muokkaa tietoja</p>
+<p><center>Muokkaa tietoja</center></p>
 <form action='./paivita.php' method='post'>
 <input type='hidden' name='id' value='<?php print $rivi->id;?>'><br>
 Date: <input type='date' name='date' value='<?php print $rivi->date;?>'><br>
