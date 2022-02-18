@@ -10,7 +10,7 @@ if (empty($nimi) || empty($date) || empty($viesti)) {
     exit;
 }
 try {
-    $yhteys=mysqli_connect("db", "root", "password", "vieraskirja");
+    $yhteys=mysqli_connect("db", "root", "password", "kukkuu");
     
 }
 catch(Exception $e) {
