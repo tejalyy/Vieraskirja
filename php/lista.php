@@ -10,11 +10,13 @@ catch(Exception $e){
 include "../html/header.html";
 echo "<div style=\"text-align:center\">";
 echo "<div style=\"background-color:#eeeee4\">";
+echo "<div style=\"width:500px\">";
 $tulos=mysqli_query($yhteys, "select * from vieraat");
 while ($rivi=mysqli_fetch_object($tulos)){
     print "<li>$rivi->id $rivi->vieras $rivi->teksti $rivi->date <a href='./poista.php?poistettava=$rivi->id'>Poista</a> <a href='./muokkaa.php?muokattava=$rivi->id'>Muokkaa</a>";
 }
 mysqli_close($yhteys);
+echo "</div>";
 echo "</div>";
 echo "</div>";
 ?>
