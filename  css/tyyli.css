@@ -1,0 +1,11 @@
+@charset "UTF-8;";
+body {
+	background-color: rgba(112,146,190,255);
+	}
+.etusivu {
+	text-align:center;
+	margin: auto;
+	font-size:larger;
+	width:500px;
+	background-color:rgb(118,181,197);
+}
