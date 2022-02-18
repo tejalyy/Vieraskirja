@@ -9,8 +9,12 @@ footer {
 .etusivu {
 	text-align:center;
 	font-size:larger;
+<<<<<<< Updated upstream
 	margin:0 auto;
 	width:500px;
 	background-color: yellow;
+=======
+	margin: 100%
+>>>>>>> Stashed changes
 }
 
