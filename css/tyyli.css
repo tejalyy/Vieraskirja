@@ -6,3 +6,6 @@ body {
 footer {
 	background-color: rgb(180,214,242,255);
 }
+table {
+	text-align:center;
+}
