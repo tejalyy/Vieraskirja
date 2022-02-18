@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+<<<<<<< HEAD
 
 
 
+=======
+body {
+	background-color: rgba(112,146,190,255);
+}
+footer {
+	background-color: rgb(180,214,242,255);
+}
+.etusivu {
+	text-align:center;
+	font-size:larger;
+}
+>>>>>>> 5da319bdd3fa093265b59ffea38ce950995ae78b
