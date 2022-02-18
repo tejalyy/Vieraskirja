@@ -18,8 +18,10 @@ while ($rivi=mysqli_fetch_object($tulos)){
 mysqli_close($yhteys);
 echo "</div>";
 ?>
+
 <br>
-<a href='../html/vieraslomake.html'>Kirjoita uusi viesti</a>
+<a href='../html/vieraslomake.html' float="center" >Kirjoita uusi viesti</a>
+
 <?php
 include "../html/footer.html";
 
