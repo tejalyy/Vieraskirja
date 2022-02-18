@@ -2,7 +2,7 @@
 $poistettava=$_GET["poistettava"];
 
 try{
-    $yhteys=mysqli_connect("db", "root", "password", "vieraskirja");
+    $yhteys=mysqli_connect("db", "root", "password", "kukkuu");
     
 }
 catch(exception $e){

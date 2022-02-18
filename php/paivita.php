@@ -5,7 +5,7 @@ $nimi=isset($_POST["nimi"]) ? $_POST["nimi"] : "";
 $date=ISSET($_POST["date"]) ? $_POST["date"] : "";
 $viesti=ISSET($_POST["viesti"]) ? $_POST["viesti"] : "";
 
-if (empty($nimi) || empty($p‰iv‰m‰‰r‰) || empty($viesti)) {
+if (empty($nimi) || empty($date) || empty($viesti)) {
     header("Location:../php/lista.php");
     exit;
 }
