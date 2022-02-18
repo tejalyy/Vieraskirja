@@ -7,6 +7,9 @@ catch(Exception $e){
     header("Location:../html/yhteysvirhe.html");
     exit;
 }
+?>
+<table class='lista'>
+<?php
 include "../html/header.html";
 echo "<div style=\"text-align:center\">";
 $tulos=mysqli_query($yhteys, "select * from vieraat");
@@ -16,7 +19,7 @@ while ($rivi=mysqli_fetch_object($tulos)){
 mysqli_close($yhteys);
 echo "</div>";
 ?>
-
+</table>
 <br>
 <a href='../html/vieraslomake.html'><center>Kirjoita uusi viesti</center></a>
 
