@@ -5,7 +5,7 @@ $vieras=isset($_POST["vieras"]) ? $_POST["vieras"] : "";
 $teksti=isset($_POST["teksti"]) ? $_POST["teksti"] : "";
 $date=isset($_POST["date"]) ? $_POST["date"] : "";
 
-if (empty($vieras) || empty ($teksti)){
+if (empty($vieras) || empty ($teksti) || empty ($date)){
     header("Location:../html/vieraslomake.html");
     exit;
 }
