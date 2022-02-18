@@ -8,7 +8,7 @@ catch(Exception $e){
     exit;
 }
 include "../html/header.html";
-echo "<div style=\"text-align:center\"background-color:#eeeee4\">";
+echo "<div style=\"text-align:center\"background-color:#eeeee4\>";
 $tulos=mysqli_query($yhteys, "select * from vieraat");
 while ($rivi=mysqli_fetch_object($tulos)){
     print "<p>$rivi->vieras $rivi->teksti $rivi->date <a href='./poista.php?poistettava=$rivi->id'>Poista</a></p>". 
