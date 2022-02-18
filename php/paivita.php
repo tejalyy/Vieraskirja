@@ -23,7 +23,7 @@ mysqli_stmt_bind_param($stmt, 'sis', $nimi, $date, $viesti);
 
 mysqli_stmt_execute($stmt);
 
-mysql_close($yhteys);
+mysqli_close($yhteys);
 
 include "../php/lista.php";
 ?>
