@@ -1,9 +1,9 @@
 @charset "UTF-8;";
 body {
-	background-color: rgba(112,146,190,255);
+	background-color: #c4aa8a;
 	}
 footer{
-	background-color: rgba(112,146,190,255);
+	background-color: rgb(135,62,35);
 	text-align: center;
 	}
 img {
@@ -14,5 +14,5 @@ img {
 	margin: auto;
 	font-size:larger;
 	width:500px;
-	background-color:rgb(118,181,197);
+	background-color:#eeeee4;
 }
