@@ -12,6 +12,7 @@ echo "<div style=\"text-align:center\">";
 $tulos=mysqli_query($yhteys, "select * from vieraat");
 while ($rivi=mysqli_fetch_object($tulos)){
     print "<li>$rivi->id $rivi->vieras $rivi->teksti $rivi->date <tr><td class='harmaa'><a href='./poista.php?poistettava=$rivi->id'>Poista</a> <a href='./muokkaa.php?muokattava=$rivi->id'>Muokkaa</a>";
+    print "<td>;
 }
 mysqli_close($yhteys);
 echo "</div>";
