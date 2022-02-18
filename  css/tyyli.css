@@ -2,6 +2,10 @@
 body {
 	background-color: rgba(112,146,190,255);
 	}
+footer{
+	background-color: rgba(112,146,190,255);
+	text-align: center;
+	}
 .etusivu {
 	text-align:center;
 	margin: auto;
