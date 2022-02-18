@@ -21,7 +21,7 @@ echo "</div>";
 ?>
 
 <br>
-<a href='../html/vieraslomake.html'><center>Kirjoita uusi viesti</center></a>
+<h2><a href='../html/vieraslomake.html'><center>Kirjoita uusi viesti</center></a></h2>
 
 <?php
 
