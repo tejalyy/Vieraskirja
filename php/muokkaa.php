@@ -22,6 +22,7 @@ if (!$rivi=mysqli_fetch_object($tulos)) {
     exit;
 }
 include "../html/header.html";
+echo "<div style=\"margin-top:-5.8%\">";
 ?>
 <link rel='stylesheet' type='text/css' href='../ css/tyyli.css'>
 <div class="col-3">
