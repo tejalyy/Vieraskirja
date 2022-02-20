@@ -32,6 +32,7 @@ mysqli_stmt_execute($stmt);
 mysqli_close($yhteys);
 header("Location:./lista.php");
 
+
 ?>
 <?php
 //Hakemisto, johon on tarkoitus tallentaa. Luo hakemisto valmiiksi.
