@@ -31,7 +31,7 @@ include "../html/header.html";
 Date: <input type='date' name='date' value='<?php print $rivi->date;?>'><br>
 Nimi: <input type='text' name='vieras' value='<?php print $rivi->vieras;?>'><br>
 Teksti: <textarea type='text' name='teksti' value='<?php print $rivi->teksti;?>'></textarea><br>
-<input type='submit' name ='ok' value='Lähetä'><br>
+<input type='submit' name ='ok' value='Tallenna'><br>
 </center></from>
 </div>
 
