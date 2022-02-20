@@ -85,11 +85,13 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.<br>";
         echo "The file ". $target_file. " has been uploaded.<br>";
+        print "<h3>".$_POST["nimi"]."</h3>";
         print "<img src='".$target_file."' width='300'>";
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
 }
+header("Location:./lista.php");
 ?>
 
 
