@@ -1,12 +1,12 @@
 <?php 
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 
-$nimi=isset($_POST["nimi"]) ? $_POST["nimi"] : "";
+$vieras=isset($_POST["vieras"]) ? $_POST["vieras"] : "";
 $date=ISSET($_POST["date"]) ? $_POST["date"] : "";
 $teksti=ISSET($_POST["teksti"]) ? $_POST["teksti"] : "";
 $id=ISSET($_POST["id"]) ? $_POST["id"] : "";
 
-if (empty($nimi) || empty($date) || empty($teksti)|| empty($id)) {
+if (empty($vieras) || empty($date) || empty($teksti)|| empty($id)) {
     header("Location:../php/lista.php");
     exit;
 }
@@ -18,9 +18,9 @@ catch(Exception $e) {
     header("Location:../html/yhteysvirhe.html");
     exit;
 }
-$sql="update vieraat set nimi=?, date=?, teksti=? where id=?";
+$sql="update vieraat set vieras=?, date=?, teksti=? where id=?";
 $stmt=mysqli_prepare($yhteys, $sql);
-mysqli_stmt_bind_param($stmt, 'sisi', $nimi, $date, $teksti, $id);
+mysqli_stmt_bind_param($stmt, 'sisi', $vieras, $date, $teksti, $id);
 
 mysqli_stmt_execute($stmt);
 

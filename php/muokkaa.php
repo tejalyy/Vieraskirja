@@ -29,7 +29,7 @@ include "../html/header.html";
 <form action='./paivita.php' method='post'><center>
 <input type='hidden' name='id' value='<?php print $rivi->id;?>'><br>
 Date: <input type='date' name='date' value='<?php print $rivi->date;?>'><br>
-Nimi: <input type='text' name='vieras' value='<?php print $rivi->nimi;?>'><br>
+Nimi: <input type='text' name='vieras' value='<?php print $rivi->vieras;?>'><br>
 Teksti: <textarea type='text' name='teksti' value='<?php print $rivi->teksti;?>'></textarea><br>
 <input type='submit' name ='ok' value='Lähetä'><br>
 </center></from>
