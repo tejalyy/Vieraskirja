@@ -4,6 +4,7 @@ if (empty($muokattava)) {
 header("Location;../lista.php");
 exit;
 }
+mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 try {
     $yhteys=mysqli_connect("db", "root", "password", "kukkuu");
 }
