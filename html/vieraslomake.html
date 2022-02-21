@@ -12,11 +12,11 @@
 <form action='../php/vieraskirja.php' method='post' enctype='multipart/form-data'>
 Date: <input type='date' name='date' value=''><br>
 Nimi: <input type='text' name='vieras' value=''><br>
-Teksti: <textarea type='text' name='teksti' value=''></textarea><br>
+Teksti: <textarea name='teksti' ></textarea><br>
 Valitse kuva:
     <input type="text" name="nimi" value=''>
     <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Lataa kuva" name="submit">
+    <input type="submit" value="Lataa kuva" name="submit"><br>
 <input type='submit' name='ok' value='Lähetä'><br>
 </form>
 <iframe src="./footer.html"onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"></iframe>

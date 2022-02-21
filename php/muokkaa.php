@@ -4,6 +4,7 @@ if (empty($muokattava)) {
 header("Location;../lista.php");
 exit;
 }
+mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 try {
     $yhteys=mysqli_connect("db", "root", "password", "kukkuu");
 }
@@ -31,7 +32,7 @@ echo "<div style=\"margin-top:-5.8%\">";
 <input type='hidden' name='id' value='<?php print $rivi->id;?>'><br>
 Date: <input type='date' name='date' value='<?php print $rivi->date;?>'><br>
 Nimi: <input type='text' name='vieras' value='<?php print $rivi->vieras;?>'><br>
-Teksti: <textarea type='text' name='teksti' value='<?php print $rivi->teksti;?>'></textarea><br>
+Teksti: <textarea name='teksti' <?php print $rivi->teksti;?>'></textarea><br>
 <input type='submit' name ='ok' value='Tallenna'><br></form>
 </div>
 
