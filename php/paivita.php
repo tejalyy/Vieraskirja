@@ -20,7 +20,7 @@ catch(Exception $e) {
 }
 $sql="update vieraat set vieras=?, date=?, teksti=? where id=?";
 $stmt=mysqli_prepare($yhteys, $sql);
-mysqli_stmt_bind_param($stmt, 'sisi', $vieras, $date, $teksti, $id);
+mysqli_stmt_bind_param($stmt, 'sssi', $vieras, $date, $teksti, $id);
 
 mysqli_stmt_execute($stmt);
 

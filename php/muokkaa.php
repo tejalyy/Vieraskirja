@@ -32,7 +32,7 @@ echo "<div style=\"margin-top:-5.8%\">";
 <input type='hidden' name='id' value='<?php print $rivi->id;?>'><br>
 Date: <input type='date' name='date' value='<?php print $rivi->date;?>'><br>
 Nimi: <input type='text' name='vieras' value='<?php print $rivi->vieras;?>'><br>
-Teksti: <textarea name='teksti' <?php print $rivi->teksti;?>'></textarea><br>
+Teksti: <textarea name='teksti' rows="5"><?php print $rivi->teksti;?></textarea><br>
 <input type='submit' name ='ok' value='Tallenna'><br></form>
 </div>
 

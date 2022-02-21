@@ -13,7 +13,7 @@ echo "<div style=\"margin-top:-4.5%\">";
 
 $tulos=mysqli_query($yhteys, "select * from vieraat");
 while ($rivi=mysqli_fetch_object($tulos)){
-    print "<li>$rivi->id $rivi->vieras $rivi->teksti $rivi->date <a href='./poista.php?poistettava=$rivi->id'>Poista</a> <a href='./muokkaa.php?muokattava=$rivi->id'>Muokkaa</a>";
+    print "<li>$rivi->id $rivi->vieras $rivi->teksti $rivi->date <img src='$rivi->kuva' width='100'> <a href='./poista.php?poistettava=$rivi->id'>Poista</a> <a href='./muokkaa.php?muokattava=$rivi->id'>Muokkaa</a>";
 }
 mysqli_close($yhteys);
 echo "</div>";
