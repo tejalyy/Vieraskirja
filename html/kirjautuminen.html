@@ -23,16 +23,16 @@ function lahetaKayttaja(lomake){
 		    }
 	  }
 	};
-	xmlhttp.open("POST", "../php/kirjauduajax.php", true);
+	xmlhttp.open("POST", "../php/kirjaudu.php", true);
 	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xmlhttp.send("user=" + jsonUser);	
 }
 </script>
 
-<h2>Fill in!</h2>
+<h2>Täytä tiedot!</h2>
 <form id='userlomake'>
-Laji: <input type='text' name='tunnus' value='' placeholder='Käyttäjätunnus...'><br>
-Paino: <input type='text' name='salasana' value='' placeholder='Salasana...'><br>
+Kauttajatunnus: <input type='text' name='tunnus' value='' placeholder='Käyttäjätunnus...'><br>
+Salasana: <input type='text' name='salasana' value='' placeholder='Salasana...'><br>
 <input type='button' name='ok' value='Lähetä' onclick='lahetaKayttaja(this.form);'><br>
 </form>
 <p id='result'>

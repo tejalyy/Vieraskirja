@@ -11,15 +11,13 @@ mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 // mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try{
-    $yhteys=mysqli_connect("db", "pena", "kukkuu", "kalakanta");
+    $yhteys=mysqli_connect("db", "root", "password", "kukkuu");
 }
 catch(Exception $e){
     print "Yhteysvirhe";
     exit;
 }
 
-//Tehd‰‰n sql-lause, jossa kysymysmerkeill‰ osoitetaan paikat
-//joihin laitetaan muuttujien arvoja
 $sql="select * from kayttaja where tunnus=? and salasana=SHA2(?, 256)";
 try{
     //Valmistellaan sql-lause

@@ -7,7 +7,7 @@ if (!($user=tarkistaJson($json))){
 }
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 try{
-    $yhteys=mysqli_connect("db", "pena", "kukkuu", "kalakanta");
+    $yhteys=mysqli_connect("db", "root", "password", "kukkuu");
 }
 catch(Exception $e){
     print "Yhteysvirhe";

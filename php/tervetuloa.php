@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["kayttaja"])){
-    header("Location:../html/kirjauduajax.html");
+    header("Location:../html/kirjautuminen.html");
     exit;
 }
 include "../html/header.html";
