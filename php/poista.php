@@ -10,7 +10,7 @@ catch(exception $e){
     exit;
 }
 
-mysqli_query($yhteys,"delete from vieraat where id=$poistettava");
+mysqli_query($yhteys, "delete from vieraat where id=$poistettava");
 
 mysqli_close($yhteys);
 
