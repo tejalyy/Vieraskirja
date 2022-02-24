@@ -11,7 +11,11 @@ catch(exception $e){
     exit;
 }
 
+
 //mysqli_query($yhteys,"delete from vieraat where id=$poistettava");
+
+mysqli_query($yhteys, "delete from vieraat where id=$poistettava");
+
 
 
 $poistettava=isset($_GET["poistettava"]) ? $_GET["poistettava"] : "";
