@@ -13,7 +13,7 @@ catch(Exception $e){
     print "Yhteysvirhe";
     exit;
 }
-$sql="insert into kayttaja (tunnus, salasana) values(?, SHA2(?, 256))";
+$sql="insert into kayttaja (kayttajatunnus, salasana) values(?, SHA2(?, 256))";
 try{
     $stmt=mysqli_prepare($yhteys, $sql);
     mysqli_stmt_bind_param($stmt, 'ss', $user->tunnus, $user->salasana);
